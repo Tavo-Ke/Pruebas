@@ -1,0 +1,15 @@
+﻿{
+  "nodes": [
+    {"id": "doc_main", "type": "file", "file": "Casos_Panaderia_Dominga/Caso_Panaderia_Dominga.md", "x": -600, "y": 0, "width": 450, "height": 600, "color": "4"},
+    {"id": "c_auditor", "type": "text", "text": "## 🕵️‍♂️ Análisis NIIF\n* **NIC 16:** Hornos Industriales.\n* **Negocio en Marcha:** Pivotar en pandemia (ej. San Antonio a Minimarket).", "x": 0, "y": -200, "width": 300, "height": 180, "color": "1"},
+    {"id": "c_sunat", "type": "text", "text": "## 🏢 SUNAT vs NIIF\nEl pan viejo es gasto inmediato (NIIF), pero para la SUNAT requiere destrucción ante **Notario** (Art. 37 LIR).", "x": 350, "y": -200, "width": 300, "height": 180, "color": "1"},
+    {"id": "c_tutor", "type": "text", "text": "## 👨‍🏫 Operaciones PCGE\n1. Comprar Harina (Cta. 60)\n2. Vender Panes (Cta. 70)\n3. Depreciar Horno (Cta. 68)", "x": 0, "y": 200, "width": 300, "height": 180, "color": "2"},
+    {"id": "c_devengado", "type": "text", "text": "## ⚖️ Principios\nLa cuenta 68 reconoce la depreciación por el **Devengado** sin importar si salió o no efectivo en ese mes.", "x": 350, "y": 200, "width": 300, "height": 180, "color": "2"}
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "doc_main", "fromSide": "right", "toNode": "c_auditor", "toSide": "left", "color": "1"},
+    {"id": "e2", "fromNode": "c_auditor", "fromSide": "right", "toNode": "c_sunat", "toSide": "left", "color": "1"},
+    {"id": "e3", "fromNode": "doc_main", "fromSide": "right", "toNode": "c_tutor", "toSide": "left", "color": "2"},
+    {"id": "e4", "fromNode": "c_tutor", "fromSide": "right", "toNode": "c_devengado", "toSide": "left", "color": "2"}
+  ]
+}
