@@ -1,0 +1,33 @@
+name: 🤖 Bot Cartografo (Graphify)
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '**/*.canvas'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar Boveda
+        uses: actions/checkout@v4
+
+      - name: Instalar NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ejecutar Graphify (Mapa 3D)
+        run: |
+          npx @nodesify/graphify run .
+          npx @nodesify/graphify export --format html
+
+      - name: Guardar Grafo en GitHub
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "robot: mapa de conocimiento actualizado"
+          file_pattern: 'graph.html .graphify/*'
