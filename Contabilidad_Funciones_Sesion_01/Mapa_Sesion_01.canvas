@@ -1,0 +1,15 @@
+﻿{
+  "nodes": [
+    {"id": "main", "type": "file", "file": "Contabilidad_Funciones_Sesion_01/Apunte_Sesion_01.md", "x": -500, "y": 0, "width": 450, "height": 600, "color": "4"},
+    {"id": "users", "type": "text", "text": "## 👥 Usuarios Externos\nDependen de la información auditada (SMV).\n*Ej: Bancos, SUNAT, Fitch Ratings.*", "x": 100, "y": -250, "width": 300, "height": 150, "color": "1"},
+    {"id": "case", "type": "text", "text": "## ⛽ Caso Petroperú 2022\nEl retraso en los EE.FF. hizo que perdieran su Grado de Inversión y los bancos cerraran líneas de crédito.", "x": 500, "y": -250, "width": 300, "height": 150, "color": "1"},
+    {"id": "decisions", "type": "text", "text": "## 🎯 Decisiones\n1. Operación (Comprar mercadería)\n2. Inversión (Comprar maquinaria)\n3. Financiamiento (Préstamo BCP)", "x": 100, "y": 150, "width": 300, "height": 150, "color": "2"},
+    {"id": "pcge", "type": "text", "text": "## 📓 PCGE (Asientos)\n* 104 (Efectivo)\n* 333 (Maquinaria)\n* 451 (Obligaciones Financieras)", "x": 500, "y": 150, "width": 300, "height": 150, "color": "2"}
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "main", "fromSide": "right", "toNode": "users", "toSide": "left", "color": "1"},
+    {"id": "e2", "fromNode": "users", "fromSide": "right", "toNode": "case", "toSide": "left", "color": "1"},
+    {"id": "e3", "fromNode": "main", "fromSide": "right", "toNode": "decisions", "toSide": "left", "color": "2"},
+    {"id": "e4", "fromNode": "decisions", "fromSide": "right", "toNode": "pcge", "toSide": "left", "color": "2"}
+  ]
+}
