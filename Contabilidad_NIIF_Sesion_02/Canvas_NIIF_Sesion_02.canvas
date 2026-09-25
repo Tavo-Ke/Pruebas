@@ -1,0 +1,15 @@
+﻿{
+  "nodes": [
+    {"id": "n_main", "type": "file", "file": "Contabilidad_NIIF_Sesion_02/Apunte_NIIF_Sesion_02.md", "x": -600, "y": 0, "width": 450, "height": 600, "color": "4"},
+    {"id": "n_niif", "type": "text", "text": "## 🌐 El Lenguaje Global\nLas NIIF permiten que un inversionista chino entienda los estados financieros de una empresa peruana sin traducir reglas.", "x": 0, "y": -200, "width": 300, "height": 180, "color": "1"},
+    {"id": "n_peru", "type": "text", "text": "## 🇵🇪 SMV y Perú\nObligatorio para empresas en Bolsa desde 2011. Beneficio principal: Acceso a financiamiento internacional barato (Ej. Ferreycorp).", "x": 350, "y": -200, "width": 300, "height": 180, "color": "1"},
+    {"id": "n_fairvalue", "type": "text", "text": "## ⚖️ Valor Razonable\nEs el precio que recibirías hoy por vender un activo. Reemplaza al viejo costo histórico.", "x": 0, "y": 200, "width": 300, "height": 180, "color": "2"},
+    {"id": "n_asiento", "type": "text", "text": "## 📝 Asiento PCGE\nDebe: 111 (Subió el activo)\nHaber: 777 (Ganancia NIIF)\nAplica Devengado puro.", "x": 350, "y": 200, "width": 300, "height": 180, "color": "2"}
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "n_main", "fromSide": "right", "toNode": "n_niif", "toSide": "left", "color": "1"},
+    {"id": "e2", "fromNode": "n_niif", "fromSide": "right", "toNode": "n_peru", "toSide": "left", "color": "1"},
+    {"id": "e3", "fromNode": "n_main", "fromSide": "right", "toNode": "n_fairvalue", "toSide": "left", "color": "2"},
+    {"id": "e4", "fromNode": "n_fairvalue", "fromSide": "right", "toNode": "n_asiento", "toSide": "left", "color": "2"}
+  ]
+}
