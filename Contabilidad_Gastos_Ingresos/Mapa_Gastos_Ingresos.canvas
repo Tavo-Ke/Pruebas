@@ -1,0 +1,13 @@
+﻿{
+  "nodes": [
+    {"id": "n_teoria", "type": "file", "file": "Contabilidad_Gastos_Ingresos/1_Teoria_Base.md", "x": 0, "y": -100, "width": 450, "height": 600, "color": "4"},
+    {"id": "n_auditor", "type": "file", "file": "Contabilidad_Gastos_Ingresos/2_Caso_Auditoria.md", "x": -500, "y": -300, "width": 400, "height": 450, "color": "1"},
+    {"id": "n_tutor", "type": "file", "file": "Contabilidad_Gastos_Ingresos/3_Practica_Contable.md", "x": -500, "y": 200, "width": 450, "height": 550, "color": "2"},
+    {"id": "n_tareas", "type": "file", "file": "Contabilidad_Gastos_Ingresos/4_Resolucion_Tareas.md", "x": 550, "y": 0, "width": 600, "height": 550, "color": "6"}
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "n_teoria", "fromSide": "left", "toNode": "n_auditor", "toSide": "right", "color": "1"},
+    {"id": "e2", "fromNode": "n_teoria", "fromSide": "left", "toNode": "n_tutor", "toSide": "right", "color": "2"},
+    {"id": "e3", "fromNode": "n_teoria", "fromSide": "right", "toNode": "n_tareas", "toSide": "left", "color": "6"}
+  ]
+}
